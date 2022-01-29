@@ -6,6 +6,369 @@
     <title>Samyak Jain</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+   <style>/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: rgb(253, 234, 218);
+    overflow-x: hidden;
+}
+
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    padding:3px 100px;
+    height: 800px;
+    width: 100%;
+    justify-content:right;
+    align-items: left;
+    background-color: #E1EFF2;
+
+}
+#home a{
+    display: flex;
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai', cursive;
+    width:150px;
+    font-size: 19px;
+}
+
+#abtme{
+    border: black;
+    border-width: 5px;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(0, 0, 0);
+    text-align: left;
+    font-family: 'Times New Roman';
+    margin-top: 150px;
+    width: 500px;
+    margin-right: 1000px;
+}
+
+#home p{
+    color:rgb(0, 0, 0);
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Arial';
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+#home button{
+    margin-top: 0;
+}
+
+/* hobbies Section */
+#my-hobbies{
+    background-color: rgb(253, 234, 218);
+    margin-bottom: 0px;
+}
+
+#hobbies{
+    margin: 34px;
+    display: flex;
+}
+#hobbies .box{ 
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#hobbies .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#hobbies .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+#skills-section{ 
+    position: relative;
+    margin-top: 0px;
+}
+
+#skills-section::before{
+ content: "";
+ position: absolute;
+ background: url('../coding\ bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#skills h1{
+    font-size: 30px;
+    color: black;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.meter {
+    box-sizing: content-box;
+    height: 20px; /* Can be anything */
+    position: relative;
+    margin: 20px 0 60px 0; /* Just for demo spacing */
+    background: #555;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43, 194, 83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43, 194, 83) 37%,
+      rgb(84, 240, 84) 69%
+    );
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  .meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  .orange > span {
+    background-image: linear-gradient(rgb(43, 194, 83));
+  }
+  
+  .red > span {
+    background-image: linear-gradient(rgb(43, 194, 83));
+  }
+  
+  .nostripes > span > span,
+  .nostripes > span::after {
+    background-image: none;
+  }
+  
+  #page-wrap {
+    width: 490px;
+    margin: 80px auto;
+  }
+
+  .main-name{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .main-name{
+    animation: appear 6s infinite;
+  }
+  .main-para{
+    animation: appear 6.5s infinite;
+  }
+  div:main-name h1{
+    font-size: 33px;
+    color: #808000;
+    animation: slide 6s infinite;
+  }
+  @keyframes appear{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  
+  @keyframes slide{
+    0%{margin-left:-800px;}
+    20%{margin-left:-800px;}
+    35%{margin-left:0px;}
+  100%{margin-left:0px;}
+  }
+  @keyframes reveal{
+    0%{opacity: 0; width: 0px;}
+    20%{opacity: 1; width: 0px;}
+    30%{width: 655px;}
+    80%{opacity: 1;}
+    100%{opacity: 0; width: 655px;}
+  }
+  @keyframes slider{
+      0%{background-image: url(../samyakdp2.jfif);}
+      50%{background-image: url(../samyakdp.jfif);}
+}
+  .img-slide{
+    float: right;
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-top: 30px;
+    height: 500px;
+    width:500px;
+      position: absolute;
+      background-image: url(../samyakdp2.jfif);
+      background-size: 100% 100%;
+      animation: slider 9s infinite  linear ;
+  }</style>
 </head>
 <body >
     <nav id="navbar">
