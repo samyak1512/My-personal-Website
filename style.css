@@ -346,8 +346,8 @@ body{
     100%{opacity: 0; width: 655px;}
   }
   @keyframes slider{
-      0%{background-image: url(../samyakdp2.jfif);}
-      50%{background-image: url(../samyakdp.jfif);}
+      0%{background-image: url(samyakdp2.jfif);}
+      50%{background-image: url(samyakdp.jfif);}
 }
   .img-slide{
     float: right;
