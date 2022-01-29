@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Samyak Jain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body >
+    <nav id="navbar">
+        <div id="logo">
+            <img src="samyakdp.jfif" alt="Samyak">
+        </div>
+        <ul>
+            <li>Samyak Jain</li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#my-hobbies">My Hobbies</a></li>
+            <li class="item"><a href="#skills-section">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div id="abtme">
+            <div class="main-name">
+                <h1 class="h-primary">Samyak Jain</h1>
+            </div>
+            <div class="main-para">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+            <div class="mybt">
+            <a  href="#my-hobbies">My Hobbies</a>
+            <a  href="#skills-section">Skills</a>
+            </div>
+
+        </div>
+        <div class="img-slide">
+        </div>
+    </section>
+   
+
+    <section id="my-hobbies">
+        <h1 class="h-primary center">My Hobbies</h1>
+        <div id="hobbies">
+            <div class="box">
+                <img src="coding.gif" alt="">
+                <h2 class="h-secondary center">Coding</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="giphy-guitar-2.gif" alt="">
+                <h2 class="h-secondary center">Guitar</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="bk.gif" alt="">
+                <h2 class="h-secondary center">Reading Books</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills-section">
+        <h1 class="h-primary center">Skills</h1>
+        <div id="skills">
+            <div id="page-wrap">
+                <h1  class="h-primary">C++ Competitive Coding</h1>
+                <div class="meter">
+                  <span style="width: 80%"></span>
+                </div>
+                <h1 class="h-primary">HTML</h1>
+
+                <div class="meter orange">
+                  <span style="width: 70%"></span>
+                </div>
+                <h1 class="h-primary">CSS</h1>
+
+                <div class="meter red">
+                  <span style="width: 80%"></span>
+                </div>
+                <h1 class="h-primary">Cloud Computing</h1>
+
+                <div class="meter animate">
+                  <span style="width: 90%"><span></span></span>
+                </div>
+              </div>
+            
+        </div>
+    </section>
+
+    
+</body>
+<script>$(".meter > span").each(function () {
+    $(this)
+      .data("origWidth", $(this).width())
+      .width(0)
+      .animate(
+        {
+          width: $(this).data("origWidth")
+        },
+        1200
+      );
+  });</script>
+</html>
