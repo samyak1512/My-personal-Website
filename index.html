@@ -475,4 +475,127 @@ body{
         1200
       );
   });</script>
+   <h1>Fancy Form</h1>
+<form>
+  <fieldset>
+    <legend> Classic Inputs</legend>
+    <p>First we'll start off with some classic textinput fields for single lines, passwords and multiline-text. These have been around for a long time and form a backbone for most webforms.</p>
+    <p>
+      <input type="text" id="textinput" />
+      <label for="textinput">Input (text)</label>
+    </p>
+    <p>
+      <input type="password" id="passwordinput" />
+      <label for="passwordinput">Input (password)</label>
+    </p>
+    <p>
+      <textarea id="textarea">Lorem Ipsum ...</textarea>
+      <label for="textarea">Text area</label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Selections</legend>
+    <p>Next are some other classics. Dropdowns, selection list, radio groups and the beloved checkboxes.</p>
+    <p>
+      <select id="dropdown">
+        <option>First option</option>
+        <option selected>Second option</option>
+        <option>Third option</option>
+      </select>
+      <label for="dropdown">Dropdown</label>
+    </p>
+    <p>
+      <select id="select" size="5">
+        <option>First option</option>
+        <option selected>Second option</option>
+        <option>Third option</option>
+      </select>
+      <label for="select">List selection</label>
+    </p>
+    <p>
+      <input type="radio" name="radio" id="radio1" />
+      <label for="radio1">First radio button</label>
+      <input type="radio" name="radio" id="radio2" checked />
+      <label for="radio2">Second radio button</label>
+      <input type="radio" name="radio" id="radio3" />
+      <label for="radio3">Third radio button</label>
+    </p>
+    <p>
+      <input type="checkbox" id="checkbox1" />
+      <label for="checkbox1">First checkbox</label>
+      <input type="checkbox" id="checkbox2" checked />
+      <label for="checkbox2">Second checkbox</label>
+      <input type="checkbox" id="checkbox3" />
+      <label for="checkbox3">Third checkbox</label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>New attributes &amp; pseudo-classes</legend>
+    <p>The following fields are simple text inputs that use some new HTML5 attributes (e.g. required, ...)</p>
+    <p>
+      <input type="text" id="textinput-placeholder" placeholder="Please fill me..." />
+      <label for="textinput-placeholder">Input with placeholder text</label>
+    </p>
+    <p>
+      <input type="text" id="textinput-required"  required />
+      <label for="textinput-required">Required input (invalid if empty)</label>
+    </p>
+    <p>
+      <input type="text" id="textinput-pattern" pattern="[0-9]{3}" value="invalid"/>
+      <label for="textinput-pattern">Input with pattern (3 digits)</label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend> HTML5 Inputs</legend>
+    <p>Let's get a little fancier. Here we use some of the new &lt;input&gt; types that are introduced by HTML 5.</p>
+    <p>
+      <input type="email" id="emailinput" />
+      <label for="emailinput">Input (email)</label>
+    </p>
+    <p>
+      <input type="tel" id="telinput" />
+      <label for="telinput">Input (tel)</label>
+    </p>
+    <p>
+      <input type="url" id="urlinput" />
+      <label for="urlinput">Input (url)</label>
+    </p>
+    <p>
+      <input type="search" id="searchinput" />
+      <label for="searchinput">Input (search)</label>
+    </p>
+    <p>
+      <input type="color" id="colorinput" />
+      <label for="colorinput">Input (color)</label>
+    </p>
+    <p>
+      <input type="number" id="numberinput" />
+      <label for="numberinput">Input (number)</label>
+    </p>
+    <p>
+      <input type="range" id="rangeinput" />
+      <label for="rangeinput">Input (range)</label>
+    </p>
+    <p>
+      <input type="date" id="date" />
+      <label for="dateinput">Input (date)</label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend> HTML5 Elements</legend>
+    <p>Last but not least, two new form elements.</p>
+    <p>
+      <meter min="0" max="20" value="12" id="meter">12cm</meter>
+      <label for="meter">Meter</label>
+    </p>
+    <p>
+      <progress max="100" value="50" id="progress">50%</progress>
+      <label for="progress">Progress Bar</label>
+    </p>
+  </fieldset>
+  <p class="center">
+    <input type="submit" />
+    <input type="reset" />
+  </p>
+</form>
 </html>
